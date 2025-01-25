@@ -1,0 +1,96 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good day", "What's up?", "Howdy"],
+      "responses": ["Hello there!", "Hi! How can I assist you today?", "Hey! What's on your mind?", "Hi there, how can I help?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Take care", "Catch you later"],
+      "responses": ["Goodbye! Stay safe!", "Take care! Have a great day!", "See you soon!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thanks", "I appreciate it", "Much obliged"],
+      "responses": ["You're welcome!", "No problem!", "Happy to help!", "Anytime!"]
+    },
+    {
+      "tag": "symptoms",
+      "patterns": ["What are the symptoms of flu?", "Flu symptoms", "How do I know if I have the flu?"],
+      "responses": ["Common flu symptoms include fever, chills, muscle aches, cough, congestion, runny nose, headaches, and fatigue."]
+    },
+    {
+      "tag": "covid_precautions",
+      "patterns": ["How to stay safe from COVID?", "COVID precautions", "Protect myself from COVID", "What are COVID safety measures?"],
+      "responses": ["To stay safe: wear a mask, maintain social distancing, wash your hands frequently, and get vaccinated."]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": ["I'm feeling stressed", "How to manage anxiety?", "Tips for mental health", "I'm feeling low"],
+      "responses": ["It's okay to feel this way. Try deep breathing, meditation, talking to a loved one, or seeking professional help if needed."]
+    },
+    {
+      "tag": "exercise",
+      "patterns": ["What are the benefits of exercise?", "Should I work out?", "How often should I exercise?", "Best exercises for beginners"],
+      "responses": ["Exercise improves physical and mental health, boosts energy, and helps manage weight. Aim for at least 30 minutes a day."]
+    },
+    {
+      "tag": "diet",
+      "patterns": ["What is a balanced diet?", "Healthy eating tips", "What should I eat daily?", "Best foods for energy"],
+      "responses": ["A balanced diet includes fruits, vegetables, whole grains, lean proteins, and healthy fats. Stay hydrated and avoid processed foods."]
+    },
+    {
+      "tag": "emergency",
+      "patterns": ["What to do in a medical emergency?", "How to handle emergencies?", "Emergency contact information"],
+      "responses": ["In an emergency, call your local emergency number immediately. Keep calm and provide first aid if needed until help arrives."]
+    },
+    {
+      "tag": "doctor_visit",
+      "patterns": ["When should I see a doctor?", "How do I book a doctor's appointment?", "Should I visit a doctor for a fever?"],
+      "responses": ["Visit a doctor if symptoms persist or worsen. For emergencies, visit the nearest hospital. Always consult for recurring issues."]
+    },
+    {
+      "tag": "vaccination",
+      "patterns": ["Should I get vaccinated?", "What vaccines are necessary?", "Benefits of vaccination"],
+      "responses": ["Vaccinations protect against diseases. Stay updated on required vaccines and consult a healthcare provider for guidance."]
+    },
+    {
+      "tag": "sleep",
+      "patterns": ["How much sleep do I need?", "Why is sleep important?", "Tips for better sleep"],
+      "responses": ["Adults need 7-9 hours of sleep per night. Maintain a consistent schedule, avoid caffeine before bedtime, and create a calming environment."]
+    },
+    
+      
+        {
+          "tag": "appointment_booking",
+          "patterns": ["I need to book an appointment", "Schedule a checkup", "Make an appointment with a doctor"],
+          "responses": ["Okay, let's find a time that works for you. What type of appointment are you looking for?"],
+          "user_context": {
+            "gender": ["male"],
+            "age_group": ["adult"]
+          }
+        },
+        {
+          "tag": "appointment_booking",
+          "patterns": ["I need to book an appointment for my child", "Schedule a checkup for my daughter"],
+          "responses": ["Okay, let's find a time that works for your child. What type of appointment are you looking for?"],
+          "user_context": {
+            "gender": ["female"],
+            "age_group": ["child"]
+          }
+        },
+        {
+          "tag": "appointment_booking",
+          "patterns": ["My wife needs a checkup", "Book an appointment for my girlfriend"],
+          "responses": ["Sure, let’s book a time for her. What kind of appointment does she need?"],
+          "user_context": {
+            "gender": ["female"],
+            "age_group": ["adult"]
+          }
+        }
+      ]
+    }
+    
+  
+
