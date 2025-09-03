@@ -1,0 +1,82 @@
+🏥 Healthcare Chatbot Project
+
+📌 Project Description
+
+The Healthcare Chatbot is an AI-powered conversational system designed to assist patients and users with basic healthcare-related queries. It uses Natural Language Processing (NLP) and a trained deep learning model to understand user input and provide relevant responses.
+
+This chatbot is trained on predefined intents (such as symptoms, appointments, medications, greetings, etc.) stored in an intents.json file. Based on the user’s query, the system predicts the most likely intent and generates an appropriate response.
+
+🎯 Objectives
+
+Provide instant answers to common healthcare-related queries.
+
+Reduce the workload of healthcare staff by automating basic interactions.
+
+Act as a virtual assistant for initial medical guidance.
+
+Improve patient engagement through 24/7 availability.
+
+
+⚙️ How It Works
+
+1. User Input – The chatbot accepts queries in natural language (e.g., "What are the symptoms of diabetes?").
+
+
+2. Preprocessing – Input is tokenized and lemmatized for normalization.
+
+
+3. Bag-of-Words Model – The input is converted into a numerical vector representation.
+
+
+4. Prediction – A trained Keras neural network model (chatbot_model.h5) classifies the intent of the query.
+
+
+5. Response Generation – Based on predicted intent, the chatbot selects a suitable response from intents.json.
+
+
+6. Output – The response is displayed to the user in a conversational format.
+
+
+
+🧠 Technologies Used
+
+Python
+
+TensorFlow / Keras – for intent classification model
+
+NLTK – for tokenization and lemmatization
+
+Pickle – for saving and loading preprocessed data (words and classes)
+
+JSON – for intent-response mapping
+
+
+🚀 Features
+
+Interactive and user-friendly console chatbot.
+
+Pre-trained model for healthcare-related intents.
+
+Flexible responses (randomized for variety).
+
+Error handling for unrecognized inputs.
+
+Scalable – new intents and responses can be added easily.
+
+
+🔒 Limitations
+
+Not a replacement for professional medical advice.
+
+Limited to predefined intents and responses.
+
+Requires retraining to handle new medical topics.
+
+
+📌 Use Cases
+
+Hospitals/Clinics – answering FAQs like visiting hours, appointment booking process.
+
+Patients – symptom information, medication reminders, health tips.
+
+General Users – quick healthcare advice and guidance
